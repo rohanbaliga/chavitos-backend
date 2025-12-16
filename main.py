@@ -19,10 +19,38 @@ app.teardown_appcontext(close_db)
 
 
 @app.route('/test', methods=['GET'])
+@app.route('/Admin/AddCustomer',methods=['GET'])
+@app.route('/Admin/RemoveCustomer',methods=['GET'])
+@app.route('/Admin/EditWaitTime',methods=['GET'])
+@app.route('/Admin/GetQueue',methods=['GET'])
+@app.route('/Admin/MarkBarber',methods=['GET'])
+
 @auth_middleware
 def test():
+    
     # TODO: Implement test endpoint to verify auth middleware
     pass
+def addcustomer():
+
+    pass
+
+def removecustomer():
+
+    pass
+
+def editwaittime():
+
+    pass
+
+
+def getqueue():
+    
+     pass
+
+def markbarber():
+    
+    pass
+    
 
 
 if __name__ == '__main__':
